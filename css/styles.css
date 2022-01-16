@@ -48,3 +48,7 @@
 .order_heading{
     text-align: center;
 }
+.footer p{
+    display:flex ;
+    justify-content: space-evenly;
+}

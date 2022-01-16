@@ -30,3 +30,21 @@
     justify-content: space-around;
     padding: 30px;
 }
+.menu{
+    padding: 40px;
+
+}
+.menu_header{
+    text-align: center;
+}
+.menu1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.order_heading{
+    text-align: center;
+}

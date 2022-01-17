@@ -36,7 +36,7 @@
         </div>
 
     </div>
-    <div class="Aboutus">
+    <div class="aboutus" id="delicasies" >
         <div class="about">
             <h2>About us</h2>
             <p>Pizza-in has been around for about 5 years now <br>
@@ -132,12 +132,12 @@
                 <div>
                     <label for="Flavor">Select Flavor</label>
                     <br>
-                    <select name="Varieties" id="name1">
-                        <option value="Meat">Meat Pizza</option>
-                        <option value="Veggie">Veggie Pizza</option>
-                        <option value="Cheese">Cheese Pizza</option>
-                        <option value="Hawaii">Hawaii pizza</option>
-                        <option value="Peperoni">Peperoni pizza</option>
+                    <select name="Varieties" id="flavour">
+                        <option label="meat pizza" value="1200">Meat pizza</option>
+                        <option label="Veggie pizza" value="1500">Veggie pizza</option>
+                        <option label="Cheese pizza" value="1200">Cheese pizza</option>
+                        <option label="Hawaii pizza" value="1300">Hawaii pizza</option>
+                        <option label="Peperoni pizza" value="1400">Peperoni pizza</option>
                     </select>
     
                 </div>
@@ -146,9 +146,9 @@
                     <label for="Flavor">Select Size</label>
                 <br>
                 <select name="Size" id="name2">
-                    <option value="large">large</option>
-                    <option value="Small">Small</option>
-                    <option value="Medium">Medium</option>
+                    <option label="large" value="1200">large</option>
+                    <option label="small" value="600">Small</option>
+                    <option label="medium" value="900">Medium</option>
                 </select>
     
                 </div>
@@ -158,37 +158,37 @@
                 
                     <br>
                 
-                    <select name="crust" id="name3">
+                    <select name="crust" id="crust">
                     
-                        <option value="crispy">Crispy</option>
-                        <option value="stuffed">stuffed</option>
-                        <option value="gluton">Gluton free</option>
+                        <option label="crispy" value="80">Crispy</option>
+                        <option label="stuffed" value="90">stuffed</option>
+                        <option label="gluton" value="80">Gluton free</option>
                     
                 
                     </select>
     
                 </div>
                 <br>
-                <div>
+                <div id="topping">
                     
                     <label>
                         <p>Choose your topping</p>
-                        <input type="radio"  name="topping" id="topping1" value="topping1" >
+                        <input type="radio"  name="topping" id="sausage" value="100" >
                         sausage
                     </label>
                     <br>
                     <label>
-                        <input type="radio"  id="topping2" name="topping2" value="topping2">
+                        <input type="radio"  id="beef" name="beef" value="300">
                         beef
                     </label>
                     <br>
                     <label>
-                        <input type="radio"  id="topping3" name="topping3" value="topping3">
+                        <input type="radio"  id="bacon" name="bacon" value="250">
                         bacon
                     </label>
                     <br>
                     <label>
-                        <input type="radio"  id="topping3" name="topping3" value="topping3">
+                        <input type="radio"  id="ham" name="ham" value="200">
                         ham
                     </label>
                     <br> 
@@ -222,7 +222,8 @@
                 <form action="">
                     <label for="emailaddress"><b>Email address</b></label>
                     <input type="text" placeholder="enter email">
-                    <button type="submit">Submit</button>
+                    <button type="submit" onclick="submit()" type="button" id="submit">Submit</button>
+                
                 </form>
             </div>
             <div id="legals">

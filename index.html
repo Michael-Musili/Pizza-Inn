@@ -132,7 +132,7 @@
                     <label for="Flavor">Select Flavor</label>
                     <br>
                     <select name="Varieties" id="flavour">
-                        <option label="meat pizza" value="meat-pizza">Meat pizza</option>
+                        <option label="meat-pizza" value="meat-pizza">Meat pizza</option>
                         <option label="Veggie pizza" value="veggie-pizza">Veggie pizza</option>
                         <option label="Cheese pizza" value="cheese-pzza">Cheese pizza</option>
                         <option label="Hawaii pizza" value="hawaii pizza">Hawaii pizza</option>
@@ -144,7 +144,7 @@
                 <div>
                     <label for="Flavor">Select Size</label>
                 <br>
-                <select name="Size" id="name2">
+                <select name="Size" id="size">
                     <option label="large" value="large">large</option>
                     <option label="small" value="small">Small</option>
                     <option label="medium" value="medium">Medium</option>
@@ -192,9 +192,8 @@
                     </label>
                     <br> 
                     
-                    
-                    <button type="submit" name="submitButton" class="btn submit" id="proceed" style="background: orange;">Proceed</button>
                 </div>
+                <button name="button" type="submit" id="submit" value="Check-Out" style="background-color:orange ;" onclick= "totalPrice()">Proceed</button>
             </div>
         </div>
         
@@ -217,7 +216,8 @@
                 <form action="">
                     <label for="emailaddress"><b>Email address</b></label>
                     <input type="text" placeholder="enter email">
-                    <button type="submit" onclick="submit()" type="button" id="submit">Submit</button>
+                    <button type="submit" type="button" id="submit" value ="Check-out" name="button">Submit</button>
+                    
                 
                 </form>
             </div>

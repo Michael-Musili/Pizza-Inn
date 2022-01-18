@@ -1,5 +1,11 @@
 let flavourPrice, crustPrice,toppingPrice,sizePrice ;
-function newFlavour(){
+
+function sizePrice() {
+  var selectedSize = document.getElementById("size").value;
+  return parseInt(selectedSize);
+}
+
+function newflavour(){
   if (document.getElementById("flavour").value == meat-pizza){
     flavourprice = 1500;
   }
@@ -15,7 +21,7 @@ function newFlavour(){
   
   else (document.getElementById("flavour").value == peperoni-pizza)
     flavourprice=1600;
-    return(flavorPrice)
+    return parseInt(flavorPrice)
   };
   
   function newCrust (){
@@ -27,7 +33,7 @@ function newFlavour(){
   }
  else  (document.getElementById("crust").value == gluton )
     crustPrice=300;
-    return(crustPrice)
+    return parseInt(crustPrice)
   };
 function newTopping (){
   if   (document.getElementById("topping").value == sausage ){
@@ -41,5 +47,13 @@ function newTopping (){
   }
   else  (document.getElementById("topping").value == ham )
   toppingPrice=200;
-  return(toppingPrice)
+  return parseInt(toppingPrice)
 };
+function totalPrice(e) {
+  event.preventDefault();
+  var totPrice = ( sizePrice() + newflavour() + newCrust() + newTopping());
+  
+      console.log(totalPrice);
+  alert( "your order pizzas has been processed.Your total amount payable is " + totalPrice +"." )
+
+}
